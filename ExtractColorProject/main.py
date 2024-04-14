@@ -29,11 +29,8 @@ def draw_painting():
     for x_position in range(start_x_position, end_x_position, dot_margin):
         for y_position in range(start_y_position, end_y_position, dot_margin):
             tim.setposition(y_position,x_position)
-            draw_dot(random.choice(colors))  
+            tim.dot(20,random.choice(colors))  
 
-def draw_dot(color):
-    tim.dot(20,color)
-    
 draw_painting()
 
 screen.exitonclick()
